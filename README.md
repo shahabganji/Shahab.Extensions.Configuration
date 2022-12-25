@@ -131,7 +131,7 @@ builder.Configuration.AddSqlServer(options =>
 **PS:** Earlier, I've written an [article](https://medium.com/@shahabganji/custom-configuration-providers-in-asp-net-core-ad583604220b) about how to create a custom configuration provider; however, when working with Azure Resources, I realized that it would be interesting 
 to extend what I knew and dive deep into the topic, the APIs of this library are inspired by the official 
 [Microsoft.Extensions.Configuration.AzureAppConfiguration](https://github.com/Azure/AppConfiguration) library. I would like to work on this one and adapt more
-functionalities and environments as far as possible. I hope you enjoy this and any suggestion are more than welcome.
+functionalities and environments as far as possible. Any suggestion are more than welcome, and if you liked this library please give a ⭐.
 
 ### Resources
 
