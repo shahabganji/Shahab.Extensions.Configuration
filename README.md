@@ -83,7 +83,7 @@ app.UseSqlServerConfiguration();
 ```
 **PS:** if this line is not added then automatic refresh will not work.
 
-You could add more sentinel keys by calling the `Register` method, and you could set a cache expiration time for them by calling the 
+You could add more sentinel keys by calling the `Register` method, and you could set a cache expiration time for them by calling the `SetCacheExpiration` method:
 
 ```csharp
 builder.Configuration.AddSqlServer(options =>
