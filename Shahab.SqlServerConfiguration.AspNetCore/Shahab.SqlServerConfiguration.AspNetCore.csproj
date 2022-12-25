@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>Shahab.SqlServerConfiguration.AspNetCore</PackageId>
+        <Version>0.0.1</Version>
+        <Authors>Saeed Ganji - Shahab</Authors>
+        <Description>Shahab.SqlServerConfiguration.AspNetCore allows developers to use Microsoft (Azure) SQL Server service as a configuration source in their applications. This package adds additional features for ASP.NET Core applications to the existing package Shahab.Extensions.Configuration.SqlServerConfiguration.</Description>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\Shahab.Extensions.Configuration.SqlServerConfiguration\Shahab.Extensions.Configuration.SqlServerConfiguration.csproj" />
+    </ItemGroup>
+
+</Project>
