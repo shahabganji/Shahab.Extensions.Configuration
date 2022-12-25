@@ -4,6 +4,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shahab.Extensions.Configura
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shahab.SqlServerConfiguration.AspNetCore", "Shahab.SqlServerConfiguration.AspNetCore\Shahab.SqlServerConfiguration.AspNetCore.csproj", "{8C5877BB-4B6A-428F-A848-85EB277473CA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{7EF41AEF-25B5-4EF1-85F4-6956BCEBB297}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{B9073D37-18A5-49DE-8C98-11F80B0A9638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.WebApi", "example\Sample.WebApi\Sample.WebApi.csproj", "{F4D60D24-391B-4453-AC9B-32A09D73F367}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +27,12 @@ Global
 		{8C5877BB-4B6A-428F-A848-85EB277473CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C5877BB-4B6A-428F-A848-85EB277473CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C5877BB-4B6A-428F-A848-85EB277473CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D60D24-391B-4453-AC9B-32A09D73F367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D60D24-391B-4453-AC9B-32A09D73F367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D60D24-391B-4453-AC9B-32A09D73F367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D60D24-391B-4453-AC9B-32A09D73F367}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4D60D24-391B-4453-AC9B-32A09D73F367} = {B9073D37-18A5-49DE-8C98-11F80B0A9638}
 	EndGlobalSection
 EndGlobal

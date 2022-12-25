@@ -29,7 +29,7 @@ public sealed class SqlServerConfigurationOptions
         Refresher = new SqlServerConfigurationRefresher();
     }
 
-    public IConfigurationRefresher GetRefresher() => this.Refresher;
+    internal IConfigurationRefresher GetRefresher() => this.Refresher;
 
     public SqlServerConfigurationOptions Connect(string endpoint, TokenCredential tokenCredential,
         string tableName = "Configurations",
