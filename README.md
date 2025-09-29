@@ -1,7 +1,7 @@
 
 ## SQL Server Configuration Provider
 
-This packages allow developers to add Microsoft SQL Server service, Azure SQL included, as a configuration source in their .net applications, especially ASP.NET Core apps.
+This packages allow developers to add Microsoft SQL Server service, Azure SQL included, as a configuration source (External Configuration Store) in their .net applications, especially ASP.NET Core apps.
 
 There are two packages, the first one provides the fundamental functionalities and the second one adds integration functionalities for the ASP.NET Core:
 
