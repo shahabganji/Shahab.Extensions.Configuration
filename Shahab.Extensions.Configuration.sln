@@ -18,7 +18,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_global", "_global", "{E4DCA0B1-C4AB-49B0-A94F-D9C657997C25}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
-		Dircetory.Build.props = Dircetory.Build.props
+		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{9B2AB77B-FFBD-4798-A438-CEC7C2330EEA}"
