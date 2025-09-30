@@ -16,7 +16,8 @@ using Serilog;
     "build", GitHubActionsImage.UbuntuLatest,
     OnPullRequestBranches = ["main", "develop"],
     OnPushTags = ["*"],
-    ImportSecrets = [nameof(NuGetApiKey)]
+    ImportSecrets = [nameof(NuGetApiKey)],
+    AutoGenerate = false
 )]
 class Build : NukeBuild
 {
