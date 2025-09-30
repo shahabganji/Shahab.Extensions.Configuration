@@ -24,8 +24,12 @@
     "ExecutableTarget": {
       "type": "string",
       "enum": [
+        "CalculateNugetVersion",
+        "CI",
         "Compile",
         "Format",
+        "Pack",
+        "Push",
         "Restore",
         "Test",
         "Verify"
@@ -109,6 +113,11 @@
             "Debug",
             "Release"
           ]
+        },
+        "NuGetApiKey": {
+          "type": "string",
+          "description": "The key to push to Nuget",
+          "default": "Secrets must be entered via 'nuke :secrets [profile]'"
         },
         "Solution": {
           "type": "string",
