@@ -15,7 +15,8 @@ using Serilog;
 [GitHubActions(
     "build", GitHubActionsImage.UbuntuLatest,
     OnPullRequestBranches = ["main", "develop"],
-    OnPushTags = ["*"]
+    OnPushTags = ["*"],
+    ImportSecrets = [nameof(NuGetApiKey)] 
 )]
 class Build : NukeBuild
 {
@@ -44,7 +45,7 @@ class Build : NukeBuild
     Target CalculateNugetVersion => _ => _
         .Executes(() =>
         {
-            SemVer = Versioning.SemVer;
+            SemVer = Versioning.FullSemVer;
             if (IsPullRequest)
             {
                 Log.Information(
@@ -144,6 +145,7 @@ class Build : NukeBuild
 
     Target Push => _ => _
         .DependsOn(Pack)
+        .Requires(() => NuGetApiKey)
         .OnlyWhenDynamic(() => IsTag)
         .ProceedAfterFailure()
         .Executes(() =>
@@ -165,12 +167,12 @@ class Build : NukeBuild
         .DependsOn(Format)
         .DependsOn(Test);
 
-    Target CI => _ => _.DependsOn(Push);
+    Target CD => _ => _.DependsOn(Push);
 
     /// Support plugins are available for:
     /// - JetBrains ReSharper        https://nuke.build/resharper
     /// - JetBrains Rider            https://nuke.build/rider
     /// - Microsoft Visual Studio     https://nuke.build/visualstudio
     /// - Microsoft VSCode           https://nuke.build/vscode
-    public static int Main() => Execute<Build>(x => x.Pack);
+    public static int Main() => Execute<Build>(x => x.Push);
 }

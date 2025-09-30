@@ -40,3 +40,5 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/global.json', '**/*.csproj', '**/Directory.Packages.props') }}
       - name: 'Run: '
         run: ./build.cmd 
+        env:
+          NuGetApiKey: ${{ secrets.NUGET_API_KEY }}
