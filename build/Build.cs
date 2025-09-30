@@ -16,7 +16,7 @@ using Serilog;
     "build", GitHubActionsImage.UbuntuLatest,
     OnPullRequestBranches = ["main", "develop"],
     OnPushTags = ["*"],
-    ImportSecrets = [nameof(NuGetApiKey)] 
+    ImportSecrets = [nameof(NuGetApiKey)]
 )]
 class Build : NukeBuild
 {
@@ -36,7 +36,7 @@ class Build : NukeBuild
 
     [Parameter("The key to push to Nuget")][Secret] readonly string NuGetApiKey;
 
-    [Required][GitVersion(Framework = "net8.0", NoFetch = true, NoCache = true)] readonly GitVersion Versioning;
+    [Required][GitVersion(Framework = "net10.0", NoFetch = true, NoCache = true)] readonly GitVersion Versioning;
     string SemVer;
 
     bool IsPullRequest => GitHubActions?.IsPullRequest ?? false;
