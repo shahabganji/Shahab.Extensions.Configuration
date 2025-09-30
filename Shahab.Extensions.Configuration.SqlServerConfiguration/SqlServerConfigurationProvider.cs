@@ -187,13 +187,13 @@ public sealed class SqlServerConfigurationProvider : ConfigurationProvider, IDis
         {
             if (_options.WatchedSettings.Count == 0)
                 return;
-            
+
             foreach (var keyValueWatcher in _options.WatchedSettings)
             {
                 var key = keyValueWatcher.Key;
                 if (keyValueWatcher.CacheExpires > DateTimeOffset.Now)
                     continue;
-                
+
                 var providerCurrentValue = await _sqlConnection.ExecuteScalarAsync<string>(
                         $"SELECT c.[Value] FROM [{_options.Schema}].[{_options.Table}] c WHERE c.[Key] = '{key}'")
                     .ConfigureAwait(false);

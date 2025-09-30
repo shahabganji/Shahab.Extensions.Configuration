@@ -6,7 +6,7 @@ namespace Shahab.Extensions.Configuration.SqlServerConfiguration;
 
 public sealed class SqlServerConfigurationOptions
 {
-    private  IConfigurationRefresher Refresher { get; }
+    private IConfigurationRefresher Refresher { get; }
     internal SortedSet<string> KeyPrefixes { get; }
     internal SortedSet<string> KeySelectors { get; }
     internal TokenCredential? Token { get; private set; }
@@ -14,7 +14,7 @@ public sealed class SqlServerConfigurationOptions
     internal string Table { get; private set; }
     internal string Schema { get; private set; }
     internal bool Optional { get; }
-    
+
     internal ISet<SqlServerKeyValueWatcher> WatchedSettings { get; private set; }
 
 
@@ -40,7 +40,7 @@ public sealed class SqlServerConfigurationOptions
 
         Table = tableName;
         Schema = schema;
-        
+
         return this;
     }
 

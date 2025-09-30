@@ -24,7 +24,7 @@ public sealed class SqlServerConfigurationRefresherProvider : IConfigurationRefr
             {
                 if (provider is not IConfigurationRefresher configurationRefresher)
                     continue;
-                
+
                 configurationRefresher.LoggerFactory ??= loggerFactory;
                 source.Add(configurationRefresher);
             }
