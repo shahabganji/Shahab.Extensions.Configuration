@@ -13,12 +13,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{B907
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.WebApi", "example\Sample.WebApi\Sample.WebApi.csproj", "{F4D60D24-391B-4453-AC9B-32A09D73F367}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F961A0ED-9546-4D9C-9728-3D42A4A41A15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_global", "_global", "{E4DCA0B1-C4AB-49B0-A94F-D9C657997C25}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{9B2AB77B-FFBD-4798-A438-CEC7C2330EEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B2AB77B-FFBD-4798-A438-CEC7C2330EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2AB77B-FFBD-4798-A438-CEC7C2330EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{561B76EC-3280-4F70-B99F-1066F851E01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{561B76EC-3280-4F70-B99F-1066F851E01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{561B76EC-3280-4F70-B99F-1066F851E01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -34,5 +46,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F4D60D24-391B-4453-AC9B-32A09D73F367} = {B9073D37-18A5-49DE-8C98-11F80B0A9638}
+		{561B76EC-3280-4F70-B99F-1066F851E01F} = {F961A0ED-9546-4D9C-9728-3D42A4A41A15}
+		{8C5877BB-4B6A-428F-A848-85EB277473CA} = {F961A0ED-9546-4D9C-9728-3D42A4A41A15}
 	EndGlobalSection
 EndGlobal

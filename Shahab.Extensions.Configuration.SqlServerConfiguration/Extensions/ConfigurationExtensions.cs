@@ -24,7 +24,7 @@ public static class ConfigurationExtensions
     {
         if (services == null)
             throw new ArgumentNullException(nameof(services));
-        
+
         services.AddLogging();
         services.AddSingleton<IConfigurationRefresherProvider, SqlServerConfigurationRefresherProvider>();
         return services;

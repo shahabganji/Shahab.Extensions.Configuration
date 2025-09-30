@@ -12,7 +12,7 @@ var userAssignedIdentity = "E55046F8-02C8-42C8-B41F-A8C1EAC0893B";
 builder.Configuration.AddSqlServer(options =>
     options.Connect(sqlServerConnectionString,
             new DefaultAzureCredential(new DefaultAzureCredentialOptions()
-                { ManagedIdentityClientId = userAssignedIdentity }))
+            { ManagedIdentityClientId = userAssignedIdentity }))
         .Select("Sample:Settings:*")
         .TrimKeyPrefix("Sample:")
         .ConfigureRefresh(refreshOptions =>

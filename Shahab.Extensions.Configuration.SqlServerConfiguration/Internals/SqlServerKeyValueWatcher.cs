@@ -6,7 +6,7 @@ internal class SqlServerKeyValueWatcher
     public string Key { get; init; } = default!;
 
     public bool RefreshAll { get; init; }
-    
+
     /// <summary>
     /// The minimum time that must elapse before the key-value is refreshed.
     /// </summary>
@@ -14,8 +14,8 @@ internal class SqlServerKeyValueWatcher
 
     /// <summary>The cache expiration time for the key-value.</summary>
     public DateTimeOffset CacheExpires { get; set; }
-    
-    
+
+
     public override bool Equals(object? obj) => obj is SqlServerKeyValueWatcher keyValueWatcher &&
                                                 this.Key == keyValueWatcher.Key;
 

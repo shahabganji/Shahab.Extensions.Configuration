@@ -6,7 +6,7 @@ namespace Shahab.Extensions.Configuration.SqlServerConfiguration.Internals;
 internal sealed class SqlServerConfigurationRefresher : IConfigurationRefresher
 {
     private SqlServerConfigurationProvider _provider = default!;
-    
+
     public ILoggerFactory LoggerFactory
     {
         get
