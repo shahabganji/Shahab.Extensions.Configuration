@@ -137,7 +137,7 @@ functionalities and environments as far as possible. Any suggestion are more tha
 
 You could find more articles describing how to write custom configuration providers:
 
-* [Mine - Custom Configuration Providers in ASP.NET Core](https://medium.com/@shahabganji/custom-configuration-providers-in-asp-net-core-ad583604220b)
+* [Mine - Custom Configuration Providers in ASP.NET Core](https://shahab-the-guy.dev/blogPost/b6e2820d-8b04-4541-8ccf-fe16bf645fa6/custom-configuration-providers-in-aspnet-core)
 * [Microsoft - Implement a custom configuration provider in .NET](https://learn.microsoft.com/en-us/dotnet/core/extensions/custom-configuration-provider)
 * [Morteza Mousavi - A refreshable SQL Server Configuration Provider For .NET Core](https://mousavi310.github.io/posts/a-refreshable-sql-server-configuration-provider-for-net-core/)
 * [William Rees - .NET 6 implementing a custom configuration provider](https://wil-rees.medium.com/net-6-implementing-a-custom-configuration-provider-980741cea2f5)
